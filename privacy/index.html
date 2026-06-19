@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — PickleBack</title>
+  <meta name="description" content="PickleBack — record and verify casual pickleball match results with your phone. No account required.">
+  <meta property="og:title" content="PickleBack">
+  <meta property="og:description" content="Record pickleball matches. Verify them together.">
+  <meta property="og:image" content="/og-image.png">
+  <meta property="og:url" content="https://getpickleback.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">PickleBack</a>
+      <a href="#" class="btn btn-dark btn-sm">Download on the App Store</a>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated: June 18, 2026 &nbsp;·&nbsp; Effective date: June 18, 2026</p>
+  </header>
+
+  <!-- Body -->
+  <div class="legal-body">
+
+    <h2>1. Overview</h2>
+    <p>PickleBack is a free app with no account system. There is no email address, no password, and no name tied to any real-world identity. The only data stored on our server is what is necessary to record and verify pickleball match results and to authenticate your device.</p>
+
+    <h2>2. Information We Store</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Retention</th>
+          <th>Why</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Display name</strong></td>
+          <td>Indefinite</td>
+          <td>A username you choose at first launch. Shown to other players in lobbies and match records. Does not need to be your real name. Snapshotted into completed match records — renaming yourself does not alter past matches.</td>
+        </tr>
+        <tr>
+          <td><strong>Public key (RSA 2048)</strong></td>
+          <td>Indefinite</td>
+          <td>Your permanent pseudonymous identity. Used to verify that match submissions are signed by your device. The private key never leaves your device.</td>
+        </tr>
+        <tr>
+          <td><strong>Server-generated identifier</strong></td>
+          <td>Indefinite</td>
+          <td>A UUID created by our server (not derived from your hardware) that links your public key, display name, and match records together.</td>
+        </tr>
+        <tr>
+          <td><strong>Registration timestamp</strong></td>
+          <td>Indefinite</td>
+          <td>The date and time your device first registered with the relay.</td>
+        </tr>
+        <tr>
+          <td><strong>Match records</strong></td>
+          <td>Indefinite</td>
+          <td>Session details, team assignments, player names (snapshotted at session start), scores, and timestamps for confirmed and disputed matches.</td>
+        </tr>
+        <tr>
+          <td><strong>Authentication token hash</strong></td>
+          <td>30 days</td>
+          <td>A SHA-256 hash of your session bearer token, stored to authenticate API requests. The raw token is never stored. Expires automatically after 30 days.</td>
+        </tr>
+        <tr>
+          <td><strong>Auth challenges &amp; lobby data</strong></td>
+          <td>Ephemeral</td>
+          <td>Single-use sign-in challenges (deleted within 24 hours of expiry) and lobby state while players are gathering (discarded after the session starts or expires). Neither is retained after it is used.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>We do <strong>not</strong> collect: email addresses, phone numbers, location data, contacts, payment information, or any biometric data. The biometric sensor (Face ID / Touch ID) is used only to unlock the private key on your device — no biometric data is transmitted to our servers.</p>
+
+    <h2>3. Your Private Key</h2>
+    <p>Your RSA private key is generated on your device and stored in the iOS Keychain protected by biometric access control. It never leaves your device. Our servers never receive, store, or process your private key.</p>
+
+    <h2>4. Identity and Data Loss</h2>
+    <p>Your identity is your device. If you lose your phone or delete the app, your identity cannot be recovered. This is by design — it means no account recovery system is needed and no identity verification is stored. Your match history remains on our servers but cannot be accessed without the original private key.</p>
+
+    <h2>5. Data Sharing</h2>
+    <p>We do not sell, rent, or share your data with any third party for any purpose. PickleBack is a free app and your data is not used commercially in any way.</p>
+
+    <h2>6. Data Retention</h2>
+    <p>Match records are retained indefinitely so your history is durable. If you would like your data deleted, contact us at the support email below and we will remove all records associated with your public key.</p>
+
+    <h2>7. Children</h2>
+    <p>PickleBack is not directed at children under 13. We do not knowingly collect data from children under 13.</p>
+
+    <h2>8. Changes to This Policy</h2>
+    <p>We may update this policy. We will update the "Last updated" date at the top of this page. Continued use of the app after a change constitutes acceptance.</p>
+
+    <h2>9. Contact</h2>
+    <p>Questions about this privacy policy: <a href="mailto:picklebackapp@gmail.com">picklebackapp@gmail.com</a></p>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <nav class="footer-links">
+      <a href="../privacy/index.html">Privacy Policy</a>
+      <span class="dot">·</span>
+      <a href="../terms/index.html">Terms of Service</a>
+      <span class="dot">·</span>
+      <a href="../support/index.html">Support</a>
+    </nav>
+    <p class="footer-note">PickleBack is available on iOS.</p>
+    <p class="footer-copyright">© 2026 PickleBack</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PickleBack — Record and verify pickleball matches</title>
+  <meta name="description" content="PickleBack — record and verify casual pickleball match results with your phone. No account required.">
+  <meta property="og:title" content="PickleBack">
+  <meta property="og:description" content="Record pickleball matches. Verify them together.">
+  <meta property="og:image" content="/og-image.png">
+  <meta property="og:url" content="https://getpickleback.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="./" class="nav-logo">PickleBack</a>
+      <a href="#" class="btn btn-dark btn-sm">Download on the App Store</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+
+    <!-- Decorative pickleballs and paddle -->
+    <div class="hero-decorations" aria-hidden="true">
+
+      <!-- Paddle (top-left, tilted) -->
+      <svg class="deco deco-paddle" viewBox="0 0 90 140" xmlns="http://www.w3.org/2000/svg">
+        <!-- Handle -->
+        <rect x="31" y="96" width="28" height="42" rx="10" fill="#0a2416"/>
+        <rect x="35" y="100" width="20" height="34" rx="7" fill="#122d1c"/>
+        <!-- Grip wrapping lines -->
+        <line x1="35" y1="108" x2="55" y2="108" stroke="#1a4030" stroke-width="2"/>
+        <line x1="35" y1="116" x2="55" y2="116" stroke="#1a4030" stroke-width="2"/>
+        <line x1="35" y1="124" x2="55" y2="124" stroke="#1a4030" stroke-width="2"/>
+        <!-- Paddle head -->
+        <rect x="4" y="4" width="82" height="96" rx="16" fill="#2a6644"/>
+        <!-- Surface highlight -->
+        <rect x="10" y="10" width="70" height="84" rx="12" fill="#3a8058" opacity="0.5"/>
+        <!-- Edge guard -->
+        <rect x="4" y="4" width="82" height="96" rx="16" fill="none" stroke="#1a4731" stroke-width="4"/>
+        <!-- Honeycomb grid -->
+        <line x1="30" y1="10" x2="30" y2="100" stroke="#1a4731" stroke-width="1.5" opacity="0.5"/>
+        <line x1="60" y1="10" x2="60" y2="100" stroke="#1a4731" stroke-width="1.5" opacity="0.5"/>
+        <line x1="10" y1="36" x2="80" y2="36" stroke="#1a4731" stroke-width="1.5" opacity="0.5"/>
+        <line x1="10" y1="62" x2="80" y2="62" stroke="#1a4731" stroke-width="1.5" opacity="0.5"/>
+        <line x1="10" y1="88" x2="80" y2="88" stroke="#1a4731" stroke-width="1.5" opacity="0.5"/>
+      </svg>
+
+      <!-- Ball 1 (large, top-right) -->
+      <svg class="deco deco-ball-lg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="46" fill="#F0E040" stroke="#D4C428" stroke-width="2"/>
+        <circle cx="36" cy="32" r="46" fill="white" opacity="0.1"/>
+        <!-- Holes -->
+        <circle cx="30" cy="26" r="5.5" fill="#C8B820"/>
+        <circle cx="50" cy="20" r="5.5" fill="#C8B820"/>
+        <circle cx="70" cy="26" r="5.5" fill="#C8B820"/>
+        <circle cx="20" cy="44" r="5.5" fill="#C8B820"/>
+        <circle cx="40" cy="40" r="5.5" fill="#C8B820"/>
+        <circle cx="60" cy="42" r="5.5" fill="#C8B820"/>
+        <circle cx="78" cy="46" r="5.5" fill="#C8B820"/>
+        <circle cx="26" cy="62" r="5.5" fill="#C8B820"/>
+        <circle cx="46" cy="60" r="5.5" fill="#C8B820"/>
+        <circle cx="64" cy="60" r="5.5" fill="#C8B820"/>
+        <circle cx="76" cy="64" r="5.5" fill="#C8B820"/>
+        <circle cx="34" cy="76" r="5.5" fill="#C8B820"/>
+        <circle cx="54" cy="78" r="5.5" fill="#C8B820"/>
+        <circle cx="68" cy="74" r="5.5" fill="#C8B820"/>
+        <!-- Seams -->
+        <ellipse cx="50" cy="50" rx="46" ry="16" fill="none" stroke="#C8B820" stroke-width="1.5" opacity="0.5"/>
+        <ellipse cx="50" cy="50" rx="16" ry="46" fill="none" stroke="#C8B820" stroke-width="1.5" opacity="0.5"/>
+      </svg>
+
+      <!-- Ball 2 (small, bottom-left) -->
+      <svg class="deco deco-ball-sm" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="46" fill="#F0E040" stroke="#D4C428" stroke-width="2"/>
+        <circle cx="36" cy="32" r="46" fill="white" opacity="0.1"/>
+        <circle cx="30" cy="26" r="5.5" fill="#C8B820"/>
+        <circle cx="50" cy="20" r="5.5" fill="#C8B820"/>
+        <circle cx="70" cy="26" r="5.5" fill="#C8B820"/>
+        <circle cx="20" cy="44" r="5.5" fill="#C8B820"/>
+        <circle cx="40" cy="40" r="5.5" fill="#C8B820"/>
+        <circle cx="60" cy="42" r="5.5" fill="#C8B820"/>
+        <circle cx="78" cy="46" r="5.5" fill="#C8B820"/>
+        <circle cx="26" cy="62" r="5.5" fill="#C8B820"/>
+        <circle cx="46" cy="60" r="5.5" fill="#C8B820"/>
+        <circle cx="64" cy="60" r="5.5" fill="#C8B820"/>
+        <circle cx="34" cy="76" r="5.5" fill="#C8B820"/>
+        <circle cx="54" cy="78" r="5.5" fill="#C8B820"/>
+        <ellipse cx="50" cy="50" rx="46" ry="16" fill="none" stroke="#C8B820" stroke-width="1.5" opacity="0.5"/>
+        <ellipse cx="50" cy="50" rx="16" ry="46" fill="none" stroke="#C8B820" stroke-width="1.5" opacity="0.5"/>
+      </svg>
+
+    </div>
+
+    <div class="hero-content">
+      <h1>Record pickleball matches.<br>Verify them together.</h1>
+      <p class="sub-tagline">A drop-in lobby where everyone joins with a room code — no accounts needed. Scores are confirmed by your opponent, so the record is always fair.</p>
+      <a href="#" class="btn btn-dark">Download on the App Store</a>
+    </div>
+    <div class="hero-screenshot">
+      <img src="pickleback-ss/intro.png" alt="PickleBack showing your match record and recent games" width="260">
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how-it-works">
+    <div class="container">
+      <h2 class="section-title">How It Works</h2>
+      <div class="steps">
+
+        <div class="step">
+          <div class="step-screenshot-wrap">
+            <img src="pickleback-ss/lobby.png" alt="App screen showing lobby with room code BLO8I and team drag-and-drop">
+          </div>
+          <span class="step-number">1</span>
+          <h3>Create a Lobby</h3>
+          <p>One player creates a game and shares a 5-character room code — like HAWK3. Everyone joins on their own phone.</p>
+        </div>
+
+        <div class="step">
+          <div class="step-screenshot-wrap">
+            <img src="pickleback-ss/team-selection.png" alt="Host and player views showing team assignment" class="wide">
+          </div>
+          <span class="step-number">2</span>
+          <h3>Play Your Match</h3>
+          <p>Assign teams with drag-and-drop, start the game, and play. The app stays out of your way while you play.</p>
+        </div>
+
+        <div class="step">
+          <div class="step-screenshot-wrap">
+            <img src="pickleback-ss/game-submit.png" alt="Score submission screen showing game results">
+          </div>
+          <span class="step-number">3</span>
+          <h3>Submit and Confirm</h3>
+          <p>The host submits the final score. One player on the other team confirms — or disputes — it. Confirmed matches go on the permanent record.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Highlights -->
+  <section class="features">
+    <div class="container">
+      <div class="features-grid">
+
+        <div class="feature-items">
+
+          <div class="feature">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="7" y="2" width="10" height="20" rx="2" stroke="#ffffff" stroke-width="2"/>
+                <circle cx="12" cy="18" r="1" fill="#ffffff"/>
+              </svg>
+            </div>
+            <div class="feature-text">
+              <h4>No accounts</h4>
+              <p>Your identity is your phone. No email, no password, no login.</p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="9" cy="7" r="3" stroke="#ffffff" stroke-width="2"/>
+                <path d="M3 20c0-3.314 2.686-6 6-6" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="17" cy="7" r="3" stroke="#ffffff" stroke-width="2"/>
+                <path d="M21 20c0-3.314-2.686-6-6-6" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="feature-text">
+              <h4>1v1, 1v2, 2v2</h4>
+              <p>Supports any casual format. Same lobby flow for all of them.</p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L4 5.5V11c0 5.25 3.5 9.74 8 11 4.5-1.26 8-5.75 8-11V5.5L12 2z" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M9 12l2 2 4-4" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="feature-text">
+              <h4>Tamper-evident records</h4>
+              <p>Scores are verified by the opposing team, not just self-reported.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="features-image">
+          <img src="pickleback-ss/dispute.png" alt="Match history showing a disputed result">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <nav class="footer-links">
+      <a href="privacy/index.html">Privacy Policy</a>
+      <span class="dot">·</span>
+      <a href="terms/index.html">Terms of Service</a>
+      <span class="dot">·</span>
+      <a href="support/index.html">Support</a>
+    </nav>
+    <p class="footer-note">PickleBack is available on iOS.</p>
+    <p class="footer-copyright">© 2026 PickleBack</p>
+  </footer>
+
+</body>
+</html>
